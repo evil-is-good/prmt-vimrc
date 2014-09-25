@@ -1,0 +1,60 @@
+priority -49
+
+extends cpp
+
+# We want to overwrite everything in parent ft.
+priority -48
+
+snippet smain "main() (main)"
+int main()
+{
+	${VISUAL}${0}
+	return 0;
+}
+endsnippet
+
+snippet for "for loop (for)"
+for (st ${2:i} = 0; $2 < ${1:count}; ${3:++}$2)
+{
+	${VISUAL}${0}
+};
+endsnippet
+
+snippet fun "function" b
+${1:void} ${2:function_name}(${3})
+{
+	${VISUAL}${0}
+};
+endsnippet
+
+snippet if "if .. (if)"
+if (${1:/* condition */})
+{
+	${VISUAL}${0}
+};
+endsnippet
+
+snippet el "else .. (else)"
+else {
+	${VISUAL}${0}
+};
+endsnippet
+
+snippet eli "else if .. (eli)"
+else if (${1:/* condition */}) {
+	${VISUAL}${0}
+};
+endsnippet
+
+snippet ife "if .. else (ife)"
+if (${1:/* condition */})
+{
+	${2}
+}
+else
+{
+	${3:/* else */}
+};
+endsnippet
+
+# vim:ft=snippets:
