@@ -1,2 +1,2 @@
 cp ./vimrc ~/.vimrc
-cp -r ./.vim/UltiSnips/ ~/.vim/
+cp -r ./UltiSnips/ ~/.vim/
